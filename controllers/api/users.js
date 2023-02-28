@@ -4,7 +4,8 @@ const User = require('../../models/user')
 
 module.exports = {
     create,
-    login
+    login,
+    checkToken
 }
 
 async function create(req, res) {
@@ -28,6 +29,11 @@ async function login(req, res) {
         console.log(err)
         res.status(400).json('Bad Credentials');
     }
+}
+
+function checkToken(req, res) {
+    console.log('req.user', req.user)
+    res.json(req.exp)
 }
 
 /*-- Helper Functions --*/

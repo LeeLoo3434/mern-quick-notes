@@ -33,5 +33,6 @@ export function logOut() {
 }
 
 export function checkToken() {
-    alert('clicked')
+    return usersAPI.checkToken()
+        .then(dateStr => new Date(dateStr))
 }
