@@ -1,0 +1,33 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  nav a:hover {
+    background-color: #ccc;
+  }
+  
+  nav .user {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav .user span {
+    margin-right: 10px;
+  }
+  
+  nav .logout {
+    color: red;
+    cursor: pointer;
+  }
+  
